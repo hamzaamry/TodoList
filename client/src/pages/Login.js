@@ -36,6 +36,7 @@ const Login = () => {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)} required
+            autocomplete="off"
           />
         </div>
         <div className="input-box">
@@ -44,6 +45,7 @@ const Login = () => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}required
+            autocomplete="off"
           />
         </div>
         <button className="form-button" type="submit">Log in</button>

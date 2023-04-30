@@ -15,7 +15,6 @@ const Signup = () => {
 
   try {
     const { data } = await axios.post('http://localhost:8000/api/users/signup', { email, password });
-    console.log("asba")
     login(data.result, data.token);
     
       // redirect to the new user's todo list
@@ -36,6 +35,7 @@ const Signup = () => {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)} required
+            autocomplete="off"
           />
         </div>
         <div className="input-box">
@@ -44,6 +44,7 @@ const Signup = () => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)} required
+            autocomplete="off"
           />
         </div>
         <button className="form-button" type="submit">Sign up</button>

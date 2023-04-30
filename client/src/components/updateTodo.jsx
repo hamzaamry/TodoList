@@ -45,7 +45,8 @@ export function UpdateTodo({ _id, handleClose }) {
                     name="title"
                     className="input"
                     onChange={handleChange}
-                    placeholder="Taks"
+                    placeholder="Task"
+                    autocomplete="off"
                 />
             </div>
             <div className="todo-input">
@@ -55,6 +56,7 @@ export function UpdateTodo({ _id, handleClose }) {
                     className="input"
                     onChange={handleChange}
                     placeholder="Description"
+                    autocomplete="off"
                 />
             </div>
             <button type="submit" className="button">

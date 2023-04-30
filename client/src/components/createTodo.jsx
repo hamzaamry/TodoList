@@ -67,6 +67,7 @@ export function CreateTodo() {
                             value={data.title}
                             onChange={handleChange}
                             className="input"
+                            autocomplete="off"
                         />
                         </div>
 
@@ -77,6 +78,7 @@ export function CreateTodo() {
                             value={data.description}
                             onChange={handleChange}
                             className="input"
+                            autocomplete="off"
                         />
                     </div>
                     <button type="submit" className="button">
